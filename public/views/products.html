@@ -1,0 +1,44 @@
+  <div>
+
+      <h1>Choose your products</h1>
+
+      <table class="products-table-class">
+
+            <tr>
+                <th>Sports</th>
+            </tr>
+            <tr data-ng-repeat="product in products | filter:{ category: 'Sports' }" >
+
+
+                <td>{{ product.product }}</td>
+                <td><input id="product.id" type="checkbox" ng-model="ids[product.product]"></td>
+            </tr>
+      </table>
+      <table class="products-table-class">
+
+            <tr>
+                <th>News</th>
+            </tr>
+            <tr data-ng-repeat="product in products | filter:{ category: 'News' }" >
+
+
+                <td>{{ product.product }}</td>
+                <td><input type="checkbox" ng-model="ids[product.product]"></td>
+            </tr>
+
+
+
+       </table>
+
+      <div class="featured-info">
+          <div class="basket-class">
+          <h3>Basket</h3>
+
+          <ul>
+              <li ng-repeat="(key, value) in ids " ng-if="value == true">{{key}}</li>
+          </ul>
+          </div>
+          <input ng-disabled="countChecked() == 0" class="button-class" type="submit" value="Checkout" ng-click="checkout(ids)">
+      </div>
+
+  </div>

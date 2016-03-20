@@ -1,0 +1,17 @@
+  <div>
+
+      <h1>Confirm Checkout for customer id {{ customerId }}</h1>
+
+      <div class="featured-info">
+          <div class="basket-class">
+          <h3>Basket</h3>
+
+          <ul>
+              <li ng-repeat="(key, value) in ids " ng-if="value == true">{{key}}</li>
+          </ul>
+          </div>
+          <input class="button-class" type="submit" value="Confirm" ng-click="confirmCheckout()">
+          <input class="button-class" type="submit" value="Cancel" ng-click="cancelCheckout()">
+      </div>
+
+  </div>

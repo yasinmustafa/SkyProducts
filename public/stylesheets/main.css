@@ -1,0 +1,269 @@
+/*
+/*
+ *                                  COLOUR GUIDE
+
+highlight colour and select "Ctrl e" for visual colouyr picker
+rgba (alpha) sets the transparancy
+
+GOLD: rgb(172, 140, 71)
+WHITE: rgb(226, 226, 226)
+GREY: rgb(128,128,128)
+BLACK rgb(15,15,15)
+       rgba(15,15,15, 0.74)
+
+ */
+
+/*---------------------------------------------------------------------------------
+ *                                  GLOBAL STYLES
+ ---------------------------------------------------------------------------------*/
+
+/* class used to target specific element rather than affect the whole type (see index.html for use) */
+/* Specifity priorioty (least priority at top)
+    Universal selectors         *
+    Type selectors              p, h1, ul, a
+    Class Selectors             .sidebar, .hero
+    Attribute Selectors         Input[type="text"]
+    Pseudo selectors            :focus,:hover
+    ID selectors                #header
+    Inline styles               <p style="color:red">
+*/
+
+
+
+/*.heading {
+    color: red;
+}*/
+
+
+/* id used to target specific element rather than affect the whole type (see index.html for use) id takes pecedence ofver class
+#specific-heading {
+    color: deeppink;
+}*/
+
+body {
+    font-size: 19px;
+    font-family: "alegreya", calibri, candara, "segoe UI", Optima, Arial, sans-serif;
+    /* algreya is the google external font, the rest are bavkups (works like a coalesce) */
+    color: rgb(226, 226, 226);
+    background: rgba(15,15,15, 0.74);
+    /*background-image: url(../images/background.jpg);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2% 6% 6% 6%
+}
+
+@media screen and (min-width: 750px) {
+    body {
+        font-size: 1.4em;
+    }
+}
+
+.container-class {
+    background: rgb(15,15,15); /* IE8 because it dowsnt support transparancy */
+    background: rgba(15,15,15,0.74);
+    /* padding top bottom left reght */
+    padding: 2% 6% 6% 6%;
+
+}
+
+h1, h2, h3 {
+    font-family: "alegreya sc", Garamond, "Baskerille Old Face", "Times New Roman", serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 2em;
+    line-height: 1.2656em;
+    margin-top: 0.4219em;
+    margin-bottom: 0;
+    color: rgb(187, 193, 227);
+    /*color: red !important;
+     use important as a last resort because it overrides everything */
+}
+
+h2 {
+    font-size: 1.5em;
+    line-height: 1.2558em;
+    margin: 0.4219em auto 0.4219em auto
+}
+
+h2 {
+    font-size: 1.5263em;
+    font-weight: normal;
+    line-height: 1.8621em;
+    margin-top: 0.9310em;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.4211em;
+    margin-top: 1.4311em;
+    margin-bottom: 0;
+    font-weight: 100;
+    max-width: 700px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+
+}
+
+input[type=submit]:disabled {
+    background: #becfdd;
+}
+
+a:link {
+    color: rgb(172, 140, 71);
+}
+
+a:visited {
+    color: rgb(100,81,41);
+}
+
+a:hover {
+    color: rgb(208, 167, 79);
+}
+
+a:active {
+    color: rgb(252, 217, 142);
+}
+
+.button-class {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    max-width: 250px;
+}
+.button-class a {
+    color: rgb(226, 226, 226);
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    padding: 10px 0;
+}
+
+.button-class a:hover {
+    background-color: rgb(119,97,48);
+    border-radius: 8px;
+}
+
+.featured-info h3 {
+    border-bottom: 1px solid rgb(128,128,128);
+}
+
+.featured-info p {
+    font-style: italic;
+}
+
+.featured-info ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.gallery-class {
+    margin-top: 30px;
+}
+
+.gallery-class img {
+    width: 500px;
+}
+
+@media screen and (min-width: 600px) {
+    .gallery-class {
+        width: 567px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .gallery-class img {
+        max-width: 220px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .gallery-class {
+        width: 570px;
+    }
+
+    .gallery-class img {
+        max-width: 280px;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .featured-info {
+        float: left;
+        width: 30%;
+        margin-left: 3%;
+    }
+
+}
+
+@media screen and (min-width: 750px) {
+    .landing {
+        text-align: center;
+    }
+
+    .landing p {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/*---------------------------------------------------------------------------------
+ *                                  LOGO STYLES
+ ---------------------------------------------------------------------------------*/
+.logo-class {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+
+}
+.logo-class  img {
+    width: 150px;
+}
+
+.products-table-class {
+    float: left;
+    text-align: left;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: 5%;
+    margin-top: 20px;
+    border-spacing: 10px;
+    border-collapse: separate;
+
+}
+
+
+.basket-class {
+    width:100%;
+    height:200px;
+    margin-bottom: 5%;
+
+}
+
+/*---------------------------------------------------------------------------------
+ *                                  GLOBAL FOOTER STYLES
+ ---------------------------------------------------------------------------------*/
+footer {
+    /* top bottpom will be 10 left and right will be 0 */
+    padding: 10px 0;
+    clear: both;
+    margin-top: 350px;
+}
+
+footer h4 {
+    text-transform: uppercase;
+}
+
+footer p {
+    margin: 0;
+}
