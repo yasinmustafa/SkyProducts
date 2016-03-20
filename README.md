@@ -48,6 +48,9 @@ The restful services test needs the application to be running (although there is
 
 Functional Integration testing is done using Protractor (see test/resources/integration/protractor). However this is just a skeleton test at the moment and there is a TODO to complete the Functional Tests.
 
+### Dev Environment ###
+IntelliJ was used as the Development IDE. Also add the Scala plugin to Inteelij (for running the server within the IDE and other features)
+
 ### TODOS ###
 1. Make the Restful Services Test self contained by starting up a server within the tests
 2. Complete the automated Functional tests using Protractor.
