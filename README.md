@@ -43,7 +43,9 @@ The test strategy was to automate all tests. The level of tests cover three area
 
 A decision was made not to unit test DAO methods as they are implicitly tested by the REST tests,
 The Unit Testing class is TestCustomerLocationServiceStub and can be run as a Junit Test within the IDE.
+
 The restful services test needs the application to be running (although there is a TODO to automate tyhis within the test). Therefore to run the rest tests first start the application, then run them as junit tests in the IDE.
+
 Functional Integration testing is done using Protractor (see test/resources/integration/protractor). However this is just a skeleton test at the moment and there is a TODO to complete the Functional Tests.
 
 ### TODOS ###
