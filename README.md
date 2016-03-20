@@ -20,12 +20,17 @@ The system has been designed to use Restful Services. I decided to use these tec
 
 
 ### How do I run the application? ###
-1. At the commandline navigate to a suitable local directory and clone the repository from either github pr bitbucket, using the following URL's
-https://yasinmustafa@bitbucket.org/yasinmustafa/skyproducts.git
+####Pre-requisites
+*JDK 8 Intalled and JAVA_HOME and PATH environment variables set for the JDK
+
+1. At the commandline navigate to a suitable local directory and clone the repository from github, using the following URL
+  https://github.com/yasinmustafa/SkyProducts.git
 2. Navigate to SkyProducts: cd SkyProducts
 3. If you are using Windows execute the following command: activator run
    If you are using linux execute the following command: ./activator run
+   Note:- this step will take several minutes if it is the first time you have run activator on your machine
 4. In a browser Navigate to http://localhost:9000
+  Note:- this step will take several minutes aswell if it is the first time
 
 ### Tests ###
 The test strategy covers three areas.
