@@ -3,7 +3,7 @@
 
 ### What is this repository for? ###
 * This is the product select application for sky
-* Version 1.1
+
 
 The application is designed to receive a customerId from the calling system, however seen as this is just a test prototype the customerId has been randomly generated to be an integer between 1 and 10.
 The Location Service is also a stubbed service, and will return London if the customerId is an even number and Liverpool if it is odd.
