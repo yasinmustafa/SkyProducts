@@ -21,7 +21,7 @@ The system has been designed to use Restful Services. I decided to use these tec
 
 ### How do I run the application? ###
 ####Pre-requisites
-* JDK 8 Intalled and JAVA_HOME and PATH environment variables set for the JDK
+* JDK 8 Installed and JAVA_HOME and PATH environment variables set for the JDK
 
 ####Steps to run application
 1. At the commandline navigate to a suitable local directory and clone the repository from github, using the following URL
