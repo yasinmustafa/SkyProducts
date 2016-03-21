@@ -28,7 +28,7 @@ The system has been designed to use Restful Services. I decided to use these tec
   https://github.com/yasinmustafa/SkyProducts.git
 2. Navigate to SkyProducts: cd SkyProducts
 3. If you are using Windows execute the following command: activator run
-4. 
+
    If you are using linux execute the following command: ./activator run
 
    Note:- this step will take several minutes if it is the first time you have run activator on your machine
