@@ -28,6 +28,7 @@ The system has been designed to use Restful Services. I decided to use these tec
   https://github.com/yasinmustafa/SkyProducts.git
 2. Navigate to SkyProducts: cd SkyProducts
 3. If you are using Windows execute the following command: activator run
+4. 
    If you are using linux execute the following command: ./activator run
 
    Note:- this step will take several minutes if it is the first time you have run activator on your machine
@@ -49,7 +50,7 @@ The restful services test needs the application to be running (although there is
 Functional Integration testing is done using Protractor (see test/resources/integration/protractor). However this is just a skeleton test at the moment and there is a TODO to complete the Functional Tests.
 
 ### Dev Environment ###
-IntelliJ was used as the Development IDE. Also add the Scala plugin to Inteelij (for running the server within the IDE and other features)
+IntelliJ was used as the Development IDE. Also add the Scala plugin to Intellij (for running the server within the IDE and other features)
 
 ### TODOS ###
 1. Make the Restful Services Test self contained by starting up a server within the tests
