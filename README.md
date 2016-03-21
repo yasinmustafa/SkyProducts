@@ -38,6 +38,7 @@ The system has been designed to use Restful Services. I decided to use these tec
 
 ### Tests ###
 The test strategy was to automate all tests. The level of tests cover three areas:
+
 1. Unit testing of methods - see test/services/TestCustomerLocationServiceStub
 
 2. Restful Services Testing - see test/services/TestRestServiceCalls.java
